@@ -1,0 +1,9 @@
+Rincian Materi Pelatihan :
+1. Html dan Css
+2. Js
+3. Github
+4. PHP
+5. Mysql
+6. PHP dan Mysql
+7. Laravel
+8. Rest API
