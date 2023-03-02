@@ -1,0 +1,54 @@
+/* universal css */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.header{
+    background-color: darkslateblue;
+    padding: 20px;
+    text-align: center;
+}
+.header h1{
+    font-size: 72px;
+}
+.topnav{
+    overflow: hidden;
+    background-color: black;
+}
+.topnav a{
+    float: center;
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.topnav a:hover{
+    background-color: white;
+    color: black;
+}
+.kolom1{
+    float: left;
+    padding: 10px;
+    background-color: aqua;
+}
+.kolom1.side{
+    width: 25%;
+    background-color: bisque;
+}
+.kolom1.middle{
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both; /*membersihkan float left sebelumnya */
+}
+.footer{
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+}

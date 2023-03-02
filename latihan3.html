@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body style="background-color: azure">
+    <form action="">
+        <table border="2" align="center" cellpadding="10" width="15%">
+            <thead>
+                <tr style="background-color: skyblue">
+                    <th colspan="2">Latihan Membuat Form</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>
+                        <input type="submit">
+                    </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- inputan nama dengan menggunakan type text -->
+                        <label for="">Nama</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nama" value="" placeholder="Silakan Masukkan Nama" size="50"
+                            width="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="" value="" placeholder="Masukkan Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Jenis Kelamin</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="" value="L" checked>Laki-laki <br>
+                        <input type="radio" name="gender" id="" value="P">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Hobby</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="" value="Menulis">Menulis <br>
+                        <input type="checkbox" name="hobby" id="" value="Membaca">Membaca <br>
+                        <input type="checkbox" name="hobby" id="" value="Menari">Menari
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Pendidikan</label>
+                    </td>
+                    <td>
+                        <select name="Pendidikan" id="">
+                            <option value="">Pilih Pendidikan</option>
+                            <option value="SMA">SMA</option>
+                            <option value="D1">D1</option>
+                            <option value="D2">D2</option>
+                            <option value="D3">D3</option>
+                            <option value="S1">S1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Alamat</label>
+                    </td>
+                    <td>
+                        <textarea name="Alamat" id="" cols="50" rows="5" placeholder="Tuliskan Alamat"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <br>
+            <a href="latihan1.html">Back</a>
+        </table>
+    </form>
+</body>
+
+</html>
