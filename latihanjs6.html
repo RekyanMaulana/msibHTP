@@ -1,0 +1,39 @@
+<script>
+    let pelanggan = "Rekyan";
+    let produk = "TV";
+
+    if (produk == 'TV'){
+        harga = 3000000;
+    }
+    else if (produk == 'Motor'){
+        harga = 15000000;
+    }
+    else if (produk == 'Kulkas'){
+        harga = 4000000;
+    }
+    else {
+        harga = 0;
+    }
+
+    let jmlBeli = 6;
+    if (jmlBeli => 5){
+        diskon = 0.5;
+    }
+    else{
+        diskon = 1;
+    }
+
+    let total = harga * jmlBeli;
+    let t_diskon = total * diskon;
+    let total_all = total - t_diskon
+
+    document.write("Data Pembelian "+
+    "<br> Pelanggan : "+pelanggan +
+    "<br> Produk yang dibeli : "+produk +
+    "<br> Harga : "+harga +
+    "<br> Jumlah : "+jmlBeli +
+    "<br> Total : "+total +
+    "<br> Total Diskon : "+diskon +
+    "<br> Total Harga Keseluruhan : "+total_all
+    );
+</script>
