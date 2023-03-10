@@ -1,0 +1,37 @@
+<script>
+    let pelanggan = "Rekyan";
+    let produk = 'Motor';
+
+    let harga = 0;
+    switch(produk){
+        case 'TV': harga = 3000000; break;
+        case 'Motor': harga = 15000000; break;
+        case 'Kulkas': harga = 4000000; break;
+        default: harga = 0;
+    }
+    let jmlBeli = 1;
+    let total = harga * jmlBeli;
+
+    //membat diskon untuk 3 produk diatas
+    let diskon = 0;
+    if (produk == 'TV') diskon = 0.3 * total;
+    else if (produk == 'Motor') diskon = 0.2 * total;
+    else diskon = 0.05 * total;
+
+    let total2 = total - diskon;
+
+    let ppn = 0.11 * total2;
+
+    let total3 = total2 + ppn;
+
+    document.write("Data Pembelian"+
+    "<br> Pelanggan : "+pelanggan+
+    "<br> Produk : "+produk+
+    "<br> Harga Produk : "+harga+
+    "<br> Jumlah Beli Produk : "+jmlBeli+
+    "<br> Total : "+total+
+    "<br> Diskon : "+diskon+
+    "<br> Ppn : "+ppn+
+    "<br> Total Harga Keseluruhan : "+total3
+    );
+</script>
