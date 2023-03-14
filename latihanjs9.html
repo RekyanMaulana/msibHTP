@@ -4,6 +4,7 @@
     document.write('Bilangan 1'+ '<br> Bilangan 2'+'<br> Bilangan 3');
     document.write('<hr> Cetak bilangan 1 sampai 50');
 
+    //contoh looping menggunakan operator increment
     var angka;
     for(angka = 1; angka <= 50; angka++){
             document.write('<br> Bilangan '+ angka);
@@ -31,5 +32,40 @@
     for (ganjil1 = 1; ganjil1 <= 20; ganjil1 += 2){
         document.write('<br> Coba bilangan '+ ganjil1)
     }
-    
+
+    //contoh perulangan untuk mencetak bilangan genap
+    document.write('<hr> Mencetak bilangan genap');
+
+    let genap;
+    for(genap = 2; genap <= 20; genap += 2){
+        document.write('<br> Bilangan Genap : ' + genap)
+    }
+
+    //Perulangan menggunakan while
+    document.write('<hr>----------Cetak Angka 1 sampai 30----------');
+
+    let angka2 = 1;
+    //angka 1 ini nantinya akan di increment
+    while(angka2 <= 30){
+        document.write('<br> cetak bilangan : '+ angka2);
+        angka2++;
+    }
+
+    //Membuat bilangan prima
+    document.write('<hr> Membuat bilangan prima');
+
+    var i;
+    var j;
+
+    for(i=1; i<=30; i++){
+        var prima = 0;
+        for(j=1; j<=i; j++){
+            if(i % j == 0){
+                prima++;
+            }
+        }
+        if(prima == 2){
+            document.write('<br> Bilangan prima : '+ i)
+        }
+    }
 </script>
