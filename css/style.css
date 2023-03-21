@@ -1,0 +1,47 @@
+/* ini selector tag */
+p{
+    color: royalblue;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+}
+body{
+    background-image: url("../img/bg.jpeg");
+}
+fieldset{
+    border: aliceblue groove 5px;
+    border-radius: 30px;
+}
+img{
+    border: 5px ridge aliceblue;
+    border-radius: 20px;
+}
+
+/* grouping css */
+li, h1, h2, legend{
+    color: aliceblue;
+}
+/* psudo elemen id */
+div#menu{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+a.item:link, a.item:visited, a.item:active{
+    text-decoration: none;
+    font-size: 14pt;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    padding: 5px;
+    background-color: lightslategrey;
+    display: inline-block;
+    width: 30%;
+}
+a.item:hover{
+    color: black;
+    text-decoration: none;
+    font-size: 16pt;
+    background-color: aliceblue;
+    border: 2px solid black;
+}
