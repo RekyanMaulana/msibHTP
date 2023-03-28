@@ -35,6 +35,27 @@
                 else if ($mhs['nilai']>= 30 && $mhs['nilai'] <60) $grade = 'D';
                 else if ($mhs['nilai']>= 0 && $mhs['nilai'] <30) $grade = 'E';
                 else $grade = '';
+
+                switch ($grade) {
+                    case 'A':
+                        $predikat = 'Memuaskan';
+                        break;
+                    case 'B':
+                        $predikat = 'Bagus';
+                        break;
+                    case 'C':
+                        $predikat = 'Cukup';
+                        break;
+                    case 'D':
+                        $predikat = 'Kurang';
+                        break;
+                    case 'E':
+                        $predikat = 'Buruk';
+                        break;
+                    default:
+                        $predikat = '';
+                        break;
+                }
         ?>
         <tr>
             <td><?= $no ?></td>
@@ -43,6 +64,7 @@
             <td><?= $mhs['nilai'] ?></td>
             <td><?= $ket ?></td>
             <td><?= $grade ?></td>
+            <td><?= $predikat ?></td>
         </tr>
         <?php $no++; } ?>
     </tbody>
